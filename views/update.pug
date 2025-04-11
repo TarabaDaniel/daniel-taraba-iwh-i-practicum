@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        title Update Series Info
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            h3 Add a New Series Info
+            form(method="POST")
+                label(for="newName") Name
+                input(type="text" name="newName" required)
+                label(for="newAuthor") Author
+                input(type="text" name="newAuthor" required)
+                label(for="newImdbId") imdBid
+                input(type="text" name="newImdbId" required)
+                label(for="newReleaseYear") Release Year
+                input(type="text" name="newReleaseYear")
+                input(type="submit" value="Submit")
+                br
+                a(href="/") Return to the homepage
