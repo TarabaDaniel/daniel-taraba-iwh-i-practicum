@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Custom Object Table
+        a(href="/update-cobj") Add to this table
+        table
+            tr
+                th Name
+                th author
+                th imdbid
+                th release_year
+            each series in data
+                tr
+                    td #{series.properties.name}
+                    td #{series.properties.author}
+                    td #{series.properties.imdbid}
+                    td #{series.properties.release_year}
