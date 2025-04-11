@@ -2,8 +2,18 @@
 
 body, * {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 2px;
     padding: 0;
+}
+
+table th, table td {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+table th {
+    font-weight: bold;
+    background-color: lightblue;
 }
 
 h1 {
